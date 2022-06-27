@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/img/favicon-16x16.png"
+    />
+    <title>Sign-in Form</title>
+    <meta
+      name="description"
+      content="A simple sign-in form using html, css and js best practices."
+    />
+    <link rel="text/css" href="https://yarnpkg.com/en/package/normalize.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
+    <form action="#" method="post">
+      <h1>Sign In</h1>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          autocomplete="username"
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="current-password">Password</label>
+        <input
+          id="current-password"
+          type="password"
+          name="current-password"
+          required
+          autocomplete="current-password"
+        />
+      </div>
+
+      <button id="sign-in">SIGN IN</button>
+    </form>
+  </body>
+</html>
