@@ -16,6 +16,7 @@
     />
     <link rel="text/css" href="https://yarnpkg.com/en/package/normalize.css" />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <form action="#" method="post">
@@ -34,11 +35,18 @@
       </div>
 
       <div>
-        <label for="current-password">Password</label>
+        <label for="password">Password</label>
+        <button
+          id="toggle-password"
+          type="button"
+          aria-label="Show password as plain text. Warning: this will display your password on the screen."
+        >
+          Show password
+        </button>
         <input
-          id="current-password"
+          id="password"
           type="password"
-          name="current-password"
+          name="password"
           required
           autocomplete="current-password"
         />
