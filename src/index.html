@@ -49,7 +49,12 @@
           name="password"
           required
           autocomplete="current-password"
+          aria-describedby="password-constraints"
         />
+        <div id="password-constraints" hidden>
+          Your password should contain: eight or more characters; at least one
+          uppercase letter; and one lowercase letter;
+        </div>
       </div>
 
       <button id="sign-in">SIGN IN</button>
