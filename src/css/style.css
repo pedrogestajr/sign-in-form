@@ -1,0 +1,116 @@
+:root {
+  --desktop-font-size: 16px;
+  --mobile-font-size: 20px;
+
+  --color-primary: hsla(0, 0%, 0%, 0.8);
+  --color-secondary: hsla(0, 0%, 0%, 0.6);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+form div {
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+label {
+  display: block;
+  font-size: var(--mobile-font-size);
+  font-weight: 500;
+  margin-bottom: 2.5px;
+  color: var(--color-primary);
+}
+
+input {
+  width: calc(100% - 34px);
+  padding: 15px;
+  border: 2px solid hsla(0, 0%, 0%, 0.4);
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  font-size: var(--mobile-font-size);
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: #fff;
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+}
+
+button#sign-in {
+  display: block;
+  width: 100%;
+}
+
+button#sign-in:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+button#toggle-password {
+  top: 2px;
+  right: 0;
+  position: absolute;
+  font-weight: 300;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+div#password-constraints {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
+
+@media (min-width: 641px) {
+  body {
+    width: 400px;
+    margin: 25vh auto;
+    padding: 50px;
+    background: #ffffff;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1), 0px 8px 53px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  button {
+    font-size: 16px; /* fallback */
+    font-size: var(--desktop-font-size);
+  }
+  button#sign-in {
+    margin: 40px 0 0 0;
+  }
+  h1 {
+    font-size: 32px;
+    font-size: calc(2 * var(--desktop-font-size));
+    font-weight: 500;
+    margin: 0 0 40px 0;
+  }
+  input {
+    font-size: 16px; /* fallback */
+    font-size: var(--desktop-font-size);
+  }
+  label {
+    font-size: 16px; /* fallback */
+    font-size: var(--desktop-font-size);
+  }
+}
